@@ -5,7 +5,7 @@ do
         then
 		echo "System up."
         else 
-        	printf "To: admin@work  Message: The service is down!" | nc $INSIDEMAILER_PORT_33333_TCP_ADDR $INSIDEMAILER_PORT_33333_TCP_PORT
+        	printf "To: admin@work  Message: The service is down! $INSIDEWEB_HOSTNAME" | nc $INSIDEMAILER_PORT_33333_TCP_ADDR $INSIDEMAILER_PORT_33333_TCP_PORT
                 break
 	fi
 
